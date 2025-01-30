@@ -1,23 +1,53 @@
+import Link from "next/link"
+import Image from "next/image"
+import pata from "../../../../public/pata.png"
+
 export default function Login(){
 
   return (
-    <div className="flex flex-col bg-blue-800 w-dvw h-dvh justify-center items-center">
-      <form className='flex flex-col justify-center rounded-sm border-black items-center p-4 gap-3 my-4 bg-blue-800 text-white'>
-      <h2>Login</h2>
-          <label htmlFor="email" >E-mail</label>
-          <input
-            type="email"
-            className="bg-blue-600 w-[80%] rounded-sm"
-            id="email"
+    <div className="bg-blue-200 flex flex-col w-[100vw] h-[100vh] justify-center items-center">
+      <div className=" border-zinc-950 border-2 bg-blue-900 w-[70%] h-[60%] rounded-2xl flex justify-center items-center">
+        <div className=" bg-blue-900 text-white font-bold w-[90%] h-[90%] flex flex-col justify-center items-center">
+        <div className="flex flex-1 flex-row h-[10%] w-[50%] justify-center items-center gap-4">
+        <Image
+          src={pata}
+          className="w-10 h-auto"
+          alt="Cachorro Home"
+          layout="responsive" 
+          objectFit="cover" 
+          /><h2>Login</h2><Image
+          src={pata}
+          className="w-10 h-auto"
+          alt="Cachorro Home"
+          layout="responsive" 
+          objectFit="cover" 
           />
-          <label htmlFor="password">Senha</label>
-          <input
-            type="password"
-            className="bg-blue-600 w-[80%] rounded-sm"
-            id="password"
-          />
-        <button type="submit" className="w-[80%] h-auto bg-blue-500 :hover-bg-blue-700 text-white">Entrar</button>
-      </form>
+              </div>
+          <form className='flex flex-col border-2 border-blue-900 justify-center rounded-md items-center p-4 gap-3 my-4 bg-blue-800 text-white'>
+          <div>
+              <label htmlFor="email" >E-mail</label>
+              <input
+                type="email"
+                className="bg-blue-500 p-1 text-white w-[100%] rounded-md"
+                id="email"
+                placeholder="Digite seu e-mail..."
+                />
+          </div>
+          <div>
+              <label htmlFor="password">Senha</label>
+              <input
+                type="password"
+                className="bg-blue-500 w-[100%] p-1 text-white rounded-md"
+                id="password"
+                placeholder="Digite sua senha..."
+                />
+          </div>
+          <h3 className="underline font-4">Esqueceu a senha?</h3>
+            <button type="submit" className="w-[100%] h-auto bg-yellow-700 :hover-bg-yellow-500 text-white rounded-md"><Link href="/">Entrar</Link></button>
+          <h3 className="font-4">Ainda não possui uma conta? <span className="text-yellow-500 underline">Cadastre-se </span></h3>
+          </form>
+            </div>
+        </div>
     </div>
   );
 };

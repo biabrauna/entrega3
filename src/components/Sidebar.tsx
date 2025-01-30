@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export default function Sidebar() {
+
   return (
     <div className="flex flex-col bg-blue-600 text-white p-4 h-auto">
       <h5>Menu</h5>

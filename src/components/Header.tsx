@@ -1,31 +1,42 @@
 import Link from 'next/link';
+import Image from "next/image"
+import patatiny from "../../public/patatiny.png"
 
 export default function Header() {
   return (
 
-    <header className="flex flex-row w-[100%] bg-blue-600 p-4">
-      <div className="text-white flex flex-row items-left gap-2 w-[100%] p-1">
-        <h1 className="text-uppercase font-weight-bold">
-          Amigos Fieles
+    <div className="flex flex-row w-[100%] border-b-2 border-blue-300 bg-blue-200 p-2">
+      <div className="text-blue-900 flex flex-row justify-between items-left w-[100%] p-2 md:p-4 lg:p-8">
+        <div className="flex flex-row">
+          <Image
+          src={patatiny}
+          className="h-10"
+          alt="Cachorro Home"
+          layout="responsive" 
+          objectFit="cover" 
+          />
+          <h1 className="size-6 font-bold">
+          Amigos  Fieles
         </h1>
-        <nav className="flex gap-4">
-          <Link className="text-white no-underline hover:text-blue-100" href="/" passHref>
+          </div>
+        <nav className="flex gap-2">
+          <Link className="text-blue-800 no-underline hover:text-zinc-950 houver:underline" href="/" passHref>
        
               Home
             
           </Link>
-          <Link className="text-white no-underlin hover:text-blue-100" href="/login" passHref>
+          <Link className="text-blue-800 no-underlin hover:text-zinc-950 houver:underline" href="/login" passHref>
               Login
             
           </Link>
-          <Link className="text-white no-underlin hover:text-blue-100" href="/register" passHref>
+          <Link className="text-blue-800 no-underlin hover:text-zinc-950 hover:underline" href="/register" passHref>
             
               Cadastrar
             
           </Link>
         </nav>
         </div>
-      </header>
+      </div>
   );
 }
 
