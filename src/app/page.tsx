@@ -1,9 +1,8 @@
-// pages/index.tsx
 import Header from '@/components/Header';
 import ServiceCard from '@/components/ServiceCard';
 import Sidebar from '@/components/Sidebar';
-import React from "react";
 import './globals.css';
+
 export default function Home() {
   return (
     <div className="flex flex-col bg-blue-200 w-[100%] h-[100%]">

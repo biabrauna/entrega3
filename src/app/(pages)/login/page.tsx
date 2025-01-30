@@ -1,10 +1,7 @@
-// pages/login.tsx
-import React from 'react';
-
 export default function Login(){
 
   return (
-    <div className="flex flex-col bg-blue-800 w-dvw h-dvh justify-start items-center">
+    <div className="flex flex-col bg-blue-800 w-dvw h-dvh justify-center items-center">
       <form className='flex flex-col justify-center rounded-sm border-black items-center p-4 gap-3 my-4 bg-blue-800 text-white'>
       <h2>Login</h2>
           <label htmlFor="email" >E-mail</label>

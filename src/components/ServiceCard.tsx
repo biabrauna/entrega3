@@ -1,4 +1,3 @@
-// components/ServiceCard.tsx
 interface ServiceCardProps {
     title: string;
     description: string;
