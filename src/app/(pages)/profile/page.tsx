@@ -68,7 +68,7 @@ export default function Profile(){
         </div>
         <div>
             <div className="bg-yellow-700 border-0 flex flex-col w-full h-full text-white p-4">
-                <p>Endereço: loremisdsdsd</p>
+                <p>Endereço: Rua 95, qd 94, casa 27, Zona Sul Nova</p>
                 <Image
                       className='w-[50%] md:w-[20%] lg:w-[10%]'
                       src={rate}

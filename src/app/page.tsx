@@ -71,19 +71,20 @@ export default function Home() {
           <h2>Viaje com tranquilidade e seu pet no maior conforto.</h2>
           </div>
       </div>
-      <div className="flex flex-col items-center justify-center h-[50vh]"> {/* Ajuste a altura conforme necessário */}
+      <div className="flex flex-col items-center justify-center h-[50vh]">
           <h1>Fotos do Hotel</h1>
           <Image
-            className='w-[50%] h-[auto] object-contain md:w-[30%] lg:w-[20%]' // Ajuste largura e altura conforme necessário
+            className='w-[50%] h-[auto] object-contain md:w-[30%] lg:w-[20%]'
             src={imageArray[currentImageIndex]}
             alt={`Image ${currentImageIndex + 1}`}
-            width={500} // Defina largura e altura para evitar warnings
+            width={500} 
             height={300}
           />
           <div className="flex mt-4">
+            
             <button onClick={handlePrevImage} className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
               Anterior
-            </button>
+            </button> 
             <button onClick={handleNextImage} className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
               Próxima
             </button>
@@ -112,7 +113,7 @@ export default function Home() {
         </div>
         <div>
             <div className="bg-yellow-700 border-0 flex flex-col w-full h-full text-white p-4">
-                <p>Endereço: loremisdsdsd</p>
+                <p>Endereço: Rua 95, qd 94, casa 27, Zona Sul Nova</p>
                 <Image
                       className='w-[50%] md:w-[20%] lg:w-[10%]'
                       src={rate}
