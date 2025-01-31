@@ -41,11 +41,11 @@ export default function Home() {
       <Header />
       <main className="flex-1">
       <div className="bg-blue-300 w-[100vw] flex flex-row h-[60vh] ">
-        <div className="flex-col flex-1 text-blue-900 bg-blue-300 gap-4 w-[70%] p-4 h-[50vh] justify-center items-center">
+        <div className="flex-col flex-1 text-blue-900 bg-blue-300 gap-4 pt-8 w-[70%] px-4 h-[100%] justify-center items-center">
           <h2>Bem-vindo ao Amigos Fiéis,</h2>
           <p>Hotel, creche, spa ou sppiter(babá), uma variedade de serviços para o seu pet!</p>
           <Image
-          className="w-[60%] md:w-[30%] lg:w-[10%]"
+          className="w-[80%] md:w-[40%] lg:w-[40%]"
           src={auau}
           alt="auau principal"
           />
@@ -114,7 +114,7 @@ export default function Home() {
             <div className="bg-yellow-700 border-0 flex flex-col w-full h-full text-white p-4">
                 <p>Endereço: loremisdsdsd</p>
                 <Image
-                      className='w-[80%] md:w-[40%] lg:w-[10%]'
+                      className='w-[50%] md:w-[20%] lg:w-[10%]'
                       src={rate}
                       alt="classificacao"
                 />

@@ -70,7 +70,7 @@ export default function Profile(){
             <div className="bg-yellow-700 border-0 flex flex-col w-full h-full text-white p-4">
                 <p>Endereço: loremisdsdsd</p>
                 <Image
-                      className='w-[80%] md:w-[40%] lg:w-[10%]'
+                      className='w-[50%] md:w-[20%] lg:w-[10%]'
                       src={rate}
                       alt="classificacao"
                 />
