@@ -6,8 +6,8 @@ export default function Login(){
 
   return (
     <div className="bg-blue-200 flex flex-col w-[100vw] h-[100vh] justify-center items-center">
-      <div className=" border-zinc-950 border-2 bg-blue-900 w-[70%] h-[60%] rounded-2xl flex justify-center items-center">
-        <div className=" bg-blue-900 text-white font-bold w-[90%] h-[90%] flex flex-col justify-center items-center">
+      <div className=" border-blue-950 border-2 bg-blue-900 w-[70%] h-[60%] rounded-2xl flex justify-center items-center">
+        <div className=" bg-blue-900 text-white font-medium w-[90%] h-[90%] flex flex-col justify-center items-center">
         <div className="flex flex-1 flex-row h-[10%] w-[50%] justify-center items-center gap-4">
         <Image
           src={pata}
@@ -15,7 +15,7 @@ export default function Login(){
           alt="Cachorro Home"
           layout="responsive" 
           objectFit="cover" 
-          /><h2>Login</h2><Image
+          /><h2  className="font-bold">Login</h2><Image
           src={pata}
           className="w-10 h-auto"
           alt="Cachorro Home"
@@ -42,9 +42,12 @@ export default function Login(){
                 placeholder="Digite sua senha..."
                 />
           </div>
-          <h3 className="underline font-4">Esqueceu a senha?</h3>
-            <button type="submit" className="w-[100%] h-auto bg-yellow-700 :hover-bg-yellow-500 text-white rounded-md"><Link href="/">Entrar</Link></button>
-          <h3 className="font-4">Ainda não possui uma conta? <span className="text-yellow-500 underline">Cadastre-se </span></h3>
+          <div className="flex flex-row justify-center items-center gap-2">
+          <input type="checkbox" name="salvar" value="sim"/> <label htmlFor="salvar" className="text-left">Lembrar de mim</label>
+          </div>
+          <p className="underline text-sm text-left">Esqueceu a senha?</p>
+            <button type="submit" className="w-[100%] h-auto p-1 bg-yellow-600 hover:bg-yellow-500 text-white rounded-md"><Link href="../../">Entrar</Link></button>
+          <p className="text-base text-center">Ainda não possui uma conta? <span className="text-yellow-500 underline hover:text-white"><Link href="../../register">Cadastre-se</Link> </span></p>
           </form>
             </div>
         </div>
